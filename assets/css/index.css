@@ -1,0 +1,46 @@
+*{
+	padding: 0;
+	margin: 0;
+	color: #666;
+	font-size: 16px;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #666;
+}
+
+.hmtop{
+padding: 0 20px;
+}
+.am-container{
+    padding-left: 21px;
+    padding-right: 40px;
+    max-width:1200px;
+    display: block; 
+    height: 35px;
+
+
+}
+.message-l{
+	float: left;
+}
+.message-r{
+	float: right;
+}
+.message-r>div{
+	float: left;
+}
+.logoBig{
+	float: left;
+}
+.nav{
+	overflow: hidden;
+
+}
+.search-bar{
+	margin: 30px 0px;
+	float: right;
+}

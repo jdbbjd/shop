@@ -8,25 +8,23 @@ const config = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'my-first-webpack.bundle.js'
   },
-  module: {
-    rules: [{
-      test: /\.css$/,
-      use: [{
-        loader: 'style-loader'
-      }, {
-        loader: 'css-loader',
-        options: {
-          modules: true
-        }
-      }]
-    }, {
-      test: /\.js$/,
-      exclude: /(node_modules|bower_components)/,
-      loader: 'babel-loader',
-      query: {
-        presets: ['es2015', 'react']
+  module:{
+     rules: [
+      {test: /\.js$/,
+          exclude: /(node_modules|bower_components)/,
+          loader: 'babel-loader',
+          query: { presets: ['es2015', 'react']}
+      },
+      {
+        test: /\.css$/,
+        use: [
+              'style-loader',
+              {
+                  loader: 'css-loader'
+              }
+        ],
       }
-    }]
+     ]
   },
   plugins: [
     new HtmlWebpackPlugin({

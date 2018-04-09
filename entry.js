@@ -11,6 +11,7 @@ import {
 
 import $ from "jquery"
 
+import "antd/dist/antd.css"
 
 //组件引入
 import Index from "./components/index.js"

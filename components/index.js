@@ -4,7 +4,9 @@ import {
 	Link
 } from "react-router"
 
-
+import "../assets/css/index.css"
+import {Input} from "antd"
+const Search = Input.Search;
 
 //<Link to={{pathname:'/list',query:{id:item.goodsID}}}>{item.goodsName}</Link>
 //<Link to="/other"  activeStyle={active}>其他</Link>
@@ -43,17 +45,14 @@ class Index extends React.Component {
 
 
 						<div className="nav white">
-							<div className="logo"><img src="../assets/images/logo.png" /></div>
 							<div className="logoBig">
 								<li><img src="../assets/images/logobig.png" /></li>
 							</div>
 
 							<div className="search-bar pr">
 								<a name="index_none_header_sysc" href="#"></a>
-								<form>
-									<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="搜索"/>
-									<input id="ai-topsearch" className="submit am-btn" value="搜索" type="submit"/>
-								</form>
+								<Search placeholder="input search text" enterButton="Search" size="large" />
+
 							</div>
 						</div>
 
