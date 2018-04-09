@@ -42,21 +42,15 @@ class Index extends React.Component {
 								</div>
 							</ul>
 						</div>
-
-
 						<div className="nav white">
 							<div className="logoBig">
 								<li><img src="../assets/images/logobig.png" /></li>
 							</div>
-
 							<div className="search-bar pr">
 								<a name="index_none_header_sysc" href="#"></a>
 								<Search placeholder="input search text" enterButton="Search" size="large" />
-
 							</div>
 						</div>
-
-						<div className="clear"></div>
 					</div>
 
 			    </header>
