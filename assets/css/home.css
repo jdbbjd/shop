@@ -1,8 +1,6 @@
 .ant-carousel .slick-slide {
   text-align: center;
-  height: 300px;
-  line-height: 300px;
-  background: #364d79;
+  height: 430px;
   overflow: hidden;
 }
 
@@ -12,19 +10,78 @@
 ul{
 	margin:0;
 }
+
+/*导航栏*/
+#nav{
+	position: relative;
+	z-index:2;
+}
 #nav>ul{
-	overflow:hidden;
+	overflow: hidden;
+	
 }
 #nav>ul>li{
-	height:30px;
+	height:45px;
 	margin:0 20px;
 	float:left;
-	position:relative;
+	line-height:45px;
+	text-align:center;
 }
-#nav>ul>li>ul{
+#nav>ul>li a{
+	font-size:16px;
+	font-weight:700;
+}
+#nav>ul>li:nth-of-type(1){
+	background:#c30;
+	width:180px;
+	color:#fff;
+}
+#nav>ul>ul{
 	position:absolute;
+	margin-left:20px;
+	display:block;
+	width:180px;
+	top:45px;
+}
+#nav>ul>ul>li{
+	height:36px;
+	background:#000;
+	opacity:0.8;
+	color:#fff;
+	line-height:36px;
+	border-bottom:1px solid #666;
+}
+#nav>ul>ul>li i{
+	color:#fff;
+	opacity:1;
+	margin:0 0 0 20px;
+	font-size:19px;
+	color:#900;
+}
+#nav>ul>ul>li span{
+	color:#fff;
+	opacity:1;
+	margin:0 20px;
+}
+
+/* 轮播图部分 */
+#swiper{
+	position:relative;
+	z-index:1;
 }
 #swiper img{
 	width:100%;
 	height:100%;
+}
+#swiper_bot{
+	position:absolute;
+	width:220px;
+	height:400px;
+	right:50px;
+	top:15px;
+	background:#fff;
+}
+#swiper_bot button{
+	background: #F37B1D;
+	color:#fff;
 }
