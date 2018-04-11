@@ -5,8 +5,7 @@ import {
 } from "react-router"
 
 import "../assets/css/index.css"
-import {Input} from "antd"
-const Search = Input.Search;
+import {Icon} from "antd"
 
 //<Link to={{pathname:'/list',query:{id:item.goodsID}}}>{item.goodsName}</Link>
 //<Link to="/other"  activeStyle={active}>其他</Link>
@@ -47,17 +46,94 @@ class Index extends React.Component {
 								<li><img src="../assets/images/logobig.png" /></li>
 							</div>
 							<div className="search-bar pr">
-								<a name="index_none_header_sysc" href="#"></a>
-								<Search placeholder="input search text" enterButton="Search" size="large" />
+								<input type="text"/>
+								<button>搜索</button>
+								
 							</div>
 						</div>
 					</div>
 
 			    </header>
+				
+				<div id="rightbar">
+					<div className="rightbarblank"></div>
+					<ul>
+						<li>
+							<Link to="cart.js" title="">
+								<Icon type="shopping-cart" />
+								<div>购物车</div>
+							</Link>
+						</li>
+						<li>
+							<a href="javascript:;" title="">
+								<Icon type="red-envelope" />
+								<div>优惠券</div>
+							</a>
+						</li>
+						<li><a href="javascript:;" title="">
+								<Icon type="wallet" />
+								<div>钱包</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" title="">
+								<Icon type="github" />
+								<div>足迹</div>
+							</a>
+						</li>
+					</ul>
 
+					<ul className="loutinav">
+						<li>
+							<a href="cart.html" title="">
+								<div>红人</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" title="">
+								<div>精选</div>
+							</a>
+						</li>
+						<li><a href="javascript:;" title="">
+								<div>特卖</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" title="">
+								<div>女装</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" title="">
+								<div>女鞋</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" title="">
+								<div>美妆</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" title="">
+								<div>男友</div>
+							</a>
+						</li>
+						<li className="gototop">
+							<a href="#" title="">
+								<div>&nbsp;&nbsp;<br/>Top</div>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+				
 			    <section>
 			    	{this.props.children}
 			    </section>
+
+			    <footer>
+			    <img src="../assets/images/footer.bmp"/>
+			    </footer>
 
 
 				
